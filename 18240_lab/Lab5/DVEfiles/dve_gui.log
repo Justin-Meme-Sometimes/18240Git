@@ -1,0 +1,28 @@
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Nov 29 17:45 2023
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240_lab/Lab5/inter.vpd' was opened successfully.
+         0 a(    2) b(    2) start(0) done(x) out(    x)
+         5 a(    2) b(    2) start(1) done(x) out(    x)
+        15 a(    2) b(    2) start(1) done(0) out(    0)
+        35 a(    2) b(    2) start(1) done(0) out(    1)
+        95 a(    2) b(    2) start(1) done(1) out(    1)
+       115 a(    2) b(    2) start(1) done(0) out(    0)
+$finish called from file "task2.sv", line 156.
+$finish at simulation time                  116
+Simulation complete, time is 116.
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Nov 29 17:45 2023
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240_lab/Lab5/inter.vpd' was opened successfully.
+         0 a(    2) b(    2) start(0) done(x) out(    x)
+         5 a(    2) b(    2) start(1) done(x) out(    x)
+        15 a(    2) b(    2) start(1) done(0) out(    0)
+        35 a(    2) b(    2) start(1) done(0) out(    1)
+        95 a(    2) b(    2) start(1) done(1) out(    1)
+       115 a(    2) b(    2) start(1) done(0) out(    0)
+$finish called from file "task2.sv", line 156.
+$finish at simulation time                  116
+Simulation complete, time is 116.

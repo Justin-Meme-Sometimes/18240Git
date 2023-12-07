@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1694652531.940875176, "rt":0.07, "ut":0.03, "st":0.01}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1694652531.812520503}
+{"VCS_COMP_START_TIME": 1694652531.812520503}
+{"VCS_COMP_END_TIME": 1694652532.034991368}
+{"VCS_USER_OPTIONS": "-q -nc -sverilog -sverilog -debug -R Loteria.sv"}
+{"vcs1": {"peak_mem": 322000}}

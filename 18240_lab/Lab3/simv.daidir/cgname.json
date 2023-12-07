@@ -1,0 +1,26 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "myAbstractFSM": [
+        "myAbstractFSM",
+        "p6HLE",
+        "module",
+        5
+    ],
+    "myExplicitFSM": [
+        "myExplicitFSM",
+        "Mt37a",
+        "module",
+        2
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        3
+    ]
+}

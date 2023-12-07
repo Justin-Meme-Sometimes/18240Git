@@ -1,0 +1,12 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -sverilog -full64
+
+all :		_VCSgd_reMwi_1.db \
+
+
+
+_VCSgd_reMwi_1.db :	IsMagicFinal.sv 
+		${VLOGAN}  ${VLOGAN_OPT} IsMagicFinal.sv
+
+

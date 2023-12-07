@@ -1,0 +1,5 @@
+{"comelab":{"timestamp_begin":1695865788.817011806, "rt":1.60, "ut":0.74, "st":1.00}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1695865788.065267682}
+{"VCS_COMP_START_TIME": 1695865788.065267682}
+{"VCS_COMP_END_TIME": 1695865790.513890189}
+{"VCS_USER_OPTIONS": "-q -nc -sverilog -sverilog -nc checkValue_test"}
