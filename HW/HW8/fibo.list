@@ -1,0 +1,15 @@
+addr data   label     opcode  operands
+---- ----  --------   ------  --------
+0100 3180  START      LI      R6      
+0102 0000                     $0      
+0104 31C0             LI      R7      
+0106 0001                     $1      
+0108 5238  LOOP       SLTI    R0 R7   
+010A 000D                     $D      
+010C C800             BRZ             
+010E 0118                     DONE    
+0110 01B7             ADD     R6 R6 R7
+0112 01FE             ADD     R7 R7 R6
+0114 F800             BRA             
+0116 0108                     LOOP    
+0118 FE00  DONE       STOP            

@@ -1,0 +1,25 @@
+********************************************************************************
+*                                  18240: hw2                                  *
+*                            Error log for: jtbell                             *
+********************************************************************************
+********************************** Problem 1 ***********************************
+library_tests.sv: file does not exist
+
+********************************** Problem 5 ***********************************
+hw2prob5.sv, library.sv: failed to compile
+Doing common elaboration 
+
+Error-[TMENF-ILL] Top Module/Entity not found
+  Top module/entity/config "multiplexer8_test" is not found in the following 
+  library list.
+  Liblist: DEFAULT
+
+
+Error-[NM] No modules defined
+  No modules defined in current design file(s).  
+
+2 errors
+
+ common elaboration failed
+
+

@@ -1,0 +1,14 @@
+addr data   label     opcode  operands
+---- ----  --------   ------  --------
+1000 3080             LI      R2      
+1002 0001                     $1      
+1004 30C0             LI      R3      
+1006 0000                     $0      
+1008 10DA             SUB     R3 R3 R2
+100A 9800             BRN             
+100C 1012                     HERE    
+100E F800             BRA             
+1010 1016                     NOTHERE 
+1012 30C0  HERE       LI      R3      
+1014 0001                     $1      
+1016 20D8  NOTHERE    MV      R3 R3   

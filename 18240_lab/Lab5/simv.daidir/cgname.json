@@ -1,0 +1,56 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "Adder": [
+        "Adder",
+        "xUt1z",
+        "module",
+        2
+    ],
+    "Multiplexer": [
+        "Multiplexer",
+        "UxyT3",
+        "module",
+        3
+    ],
+    "Decoder": [
+        "Decoder",
+        "t8TcA",
+        "module",
+        4
+    ],
+    "Synchronizer": [
+        "Synchronizer",
+        "mLbx7",
+        "module",
+        5
+    ],
+    "ShiftRegister_SIPO": [
+        "ShiftRegister_SIPO",
+        "ckLmD",
+        "module",
+        6
+    ],
+    "BarrelShiftRegister": [
+        "BarrelShiftRegister",
+        "ts568",
+        "module",
+        7
+    ],
+    "task2_test": [
+        "task2_test",
+        "WMd33",
+        "module",
+        10
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        9
+    ]
+}

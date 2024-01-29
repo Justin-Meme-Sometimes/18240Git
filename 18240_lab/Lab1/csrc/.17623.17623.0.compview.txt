@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1694655581.751070387, "rt":0.32, "ut":0.07, "st":0.05}}
+{"vcselab":{"timestamp_begin":1694655582.084177512, "rt":0.19, "ut":0.09, "st":0.02}}
+{"link":{"timestamp_begin":1694655582.286677433, "rt":0.17, "ut":0.05, "st":0.05}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1694655581.609938114}
+{"VCS_COMP_START_TIME": 1694655581.609938114}
+{"VCS_COMP_END_TIME": 1694655582.643337574}
+{"VCS_USER_OPTIONS": "-q -nc -sverilog -sverilog -debug -R Loteria.sv"}
+{"vcs1": {"peak_mem": 337064}}
+{"stitch_vcselab": {"peak_mem": 222560}}

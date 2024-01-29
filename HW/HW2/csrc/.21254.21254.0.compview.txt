@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1694980362.720225648, "rt":0.43, "ut":0.16, "st":0.10}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1694980362.029658380}
+{"VCS_COMP_START_TIME": 1694980362.029658380}
+{"VCS_COMP_END_TIME": 1694980363.227972455}
+{"VCS_USER_OPTIONS": "-q -nc -sverilog -sverilog -debug -R hw2prob1.sv"}
+{"vcs1": {"peak_mem": 321920}}

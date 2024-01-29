@@ -1,0 +1,10 @@
+addr data   label     opcode  operands
+---- ----  --------   ------  --------
+0100 3040             LI      R1      
+0102 0015                     $0015   
+0104 3080             LI      R2      
+0106 0014                     $0014   
+0108 3190             ADDI    R6 R2   
+010A 0003                     $003    
+010C 00CA             ADD     R3 R1 R2
+010E FE00  DONE       STOP            

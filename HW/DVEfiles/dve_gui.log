@@ -1,0 +1,30 @@
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/inter.vpd' was opened successfully.
+n/vcs/T-2022.06/gui/dve/libraries/syn/generic.sdb'
+n/vcs/T-2022.06/gui/dve/libraries/syn/vcs.sdb'
+n/vcs/T-2022.06/gui/dve/libraries/syn/vcs.sdb'
+n/vcs/T-2022.06/gui/dve/libraries/syn/vcs.sdb'
+n/vcs/T-2022.06/gui/dve/libraries/syn/generic.sdb'
+Warning: [AD-MD] Missing dump for active drivers
+  Missing dump for the following signals when doing active drivers analysis:
+      * system.t.vector from time 0
+  Some drivers couldn't be analyzed and will be shown as active.
+  Please dump the listed signals if you need more precise active drivers 
+  analysis.
+1 driver (1 active statement) found for signal: system.ap.a
+Warning: [AD-MD] Missing dump for active drivers
+  Missing dump for the following signals when doing active drivers analysis:
+      * system.t.vector from time 0
+  Some drivers couldn't be analyzed and will be shown as active.
+  Please dump the listed signals if you need more precise active drivers 
+  analysis.
+1 driver (1 active statement) found for signal: system.ap.b
+Warning: [AD-MD] Missing dump for active drivers
+  Missing dump for the following signals when doing active drivers analysis:
+      * system.t.vector from time 0
+  Some drivers couldn't be analyzed and will be shown as active.
+  Please dump the listed signals if you need more precise active drivers 
+  analysis.
+1 driver (1 active statement) found for signal: system.ap.c
+1 driver (1 active statement) found for signal: system.ap.g
+1 driver (1 active statement) found for signal: system.ap.h

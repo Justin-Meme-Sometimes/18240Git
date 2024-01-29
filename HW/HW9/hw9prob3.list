@@ -1,0 +1,55 @@
+addr data   label     opcode  operands
+---- ----  --------   ------  --------
+0FF0 1046  STRADDR    .DW     STR     
+0FF2 000B  STRLEN     .DW     $B      
+0FF4 0000  IS_PAL     .DW     $0      
+1000 2840             LW      R1 R0   
+1002 0FF0                     STRADDR 
+1004 28C0             LW      R3 R0   
+1006 0FF2                     STRLEN  
+1008 31C0             LI      R7      
+100A 0001                     $0001   
+100C 00DB             ADD     R3 R3 R3
+100E 0119             ADD     R4 R3 R1
+1010 2148             MV      R5 R1   
+1012 21A0             MV      R6 R4   
+1014 2920             LW      R4 R4   
+1016 0000                     $0      
+1018 50B5  LOOP       SLT     R2 R6 R5
+101A 11FA             SUB     R7 R7 R2
+101C C800             BRZ             
+101E 103C                     COMPLETELOOP
+1020 500C             SLT     R0 R1 R4
+1022 C800             BRZ             
+1024 102A                     NEXT    
+1026 F800             BRA             
+1028 1062                     DONE    
+102A 3168  NEXT       ADDI    R5 R5   
+102C 0001                     $1      
+102E 11B7             SUB     R6 R6 R7
+1030 2868             LW      R1 R5   
+1032 0000                     $0      
+1034 2930             LW      R4 R6   
+1036 0000                     $0      
+1038 F800             BRA             
+103A 1018                     LOOP    
+103C 31C0  COMPLETE   LI      R7      
+103E 0001                     $1      
+1040 3807             SW      R0 R7   
+1042 0FF4                     IS_PAL  
+1044 FE00             STOP            
+1046 0001  STR        .DW     $0001   
+1048 0002             .DW     $0002   
+104A 0000             .DW     $0000   
+104C 1000             .DW     $1000   
+104E FFFE             .DW     $FFFE   
+1050 EFFF             .DW     $EFFF   
+1052 FFFE             .DW     $FFFE   
+1054 1000             .DW     $1000   
+1056 0000             .DW     $0000   
+1058 0002             .DW     $0002   
+105A 0001             .DW     $0001   
+105C CAFE             .DW     $CAFE   
+105E DEAD             .DW     $DEAD   
+1060 BEEF             .DW     $BEEF   
+1062 FE00  DONE       STOP            

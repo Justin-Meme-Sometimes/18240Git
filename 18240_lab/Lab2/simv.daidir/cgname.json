@@ -1,0 +1,44 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "addRow": [
+        "addRow",
+        "NJQLs",
+        "module",
+        6
+    ],
+    "decoder": [
+        "decoder",
+        "zf0bY",
+        "module",
+        5
+    ],
+    "BCDtoSevenSegment": [
+        "BCDtoSevenSegment",
+        "kuSVi",
+        "module",
+        12
+    ],
+    "isMagic_test": [
+        "isMagic_test",
+        "kGY1Y",
+        "module",
+        17
+    ],
+    "enter_9_bcd": [
+        "enter_9_bcd",
+        "NdEJ6",
+        "module",
+        18
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        4
+    ]
+}

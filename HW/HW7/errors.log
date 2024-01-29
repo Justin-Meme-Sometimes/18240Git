@@ -1,0 +1,77 @@
+********************************************************************************
+*                                  18240: hw7                                  *
+*                            Error log for: jtbell                             *
+********************************************************************************
+********************************** Problem 3 ***********************************
+hw7prob3.sv: failed to compile
+Doing common elaboration 
+
+Error-[URMI] Unresolved modules
+/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/HW7/hw7prob3.sv, 19
+"Mux2to1 #(7) choose_gradeIt( .I0 (7'b0),  .I1 (score),  .Y (new_score),  .S (grade_it));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/HW7/hw7prob3.sv, 21
+"MagComp #(2) hw_comp( .A (2'b0),  .B (score_type),  .AeqB (hw_en));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/HW7/hw7prob3.sv, 23
+"MagComp #(2) lab_comp( .A (2'b1),  .B (score_type),  .AeqB (lab_en));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/HW7/hw7prob3.sv, 25
+"MagComp #(2) class_partipation_comp( .A (2'b10),  .B (score_type),  .AeqB (exam_en));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/HW7/hw7prob3.sv, 27
+"MagComp #(2) exam_comp( .A (2'b11),  .B (score_type),  .AeqB (class_p_en));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/HW7/hw7prob3.sv, 31
+"Adder #(7) hw_add( .A (new_score),  .B (score_H),  .cin (1'b0),  .sum (add_H));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/HW7/hw7prob3.sv, 32
+"Adder #(7) exam_add( .A (new_score),  .B (score_E),  .cin (1'b0),  .sum (add_E));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/HW7/hw7prob3.sv, 33
+"Adder #(7) lab_add( .A (new_score),  .B (score_L),  .cin (1'b0),  .sum (add_L));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/HW7/hw7prob3.sv, 35
+"Adder #(7) class_particiaption_add( .A (new_score),  .B (score_P),  .cin (1'b0),  .sum (add_P));"
+  Module definition of above instance is not found in the design.
+
+
+Error-[URMI] Unresolved modules
+/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/HW7/hw7prob3.sv, 38
+"Mux2to1 #(7) choose_start_H( .I1 (new_score),  .I0 (add_H),  .Y (start_H),  .S (start));"
+  Module definition of above instance is not found in the design.
+
+
+Note-[MAX_ERROR_COUNT] Maximum error count reached
+  Current number of errors has reached the default maximum error count (10).
+  Please use +error+<count> to increase the limit.
+
+10 errors
+
+ common elaboration failed
+
+

@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1698696494.542106421, "rt":0.32, "ut":0.18, "st":0.12}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1698696493.809929274}
+{"VCS_COMP_START_TIME": 1698696493.809929274}
+{"VCS_COMP_END_TIME": 1698696494.968267460}
+{"VCS_USER_OPTIONS": "-q -nc -sverilog -sverilog library.sv library_test.sv"}
+{"vcs1": {"peak_mem": 322872}}

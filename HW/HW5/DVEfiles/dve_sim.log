@@ -1,0 +1,34 @@
+19:41:40    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe simv -q -nc -pid 19440 -toolin /tmp/vcs_20231021234134_19439_jtbell..stdin -toolout /tmp/vcs_20231021234134_19439_jtbell..stdout  
+19:41:40    17 -->                                                                 [tcl] set ucliGUI::state
+19:41:40    18 -->                                                                     [tcl] gui_update_simulator_buttons
+19:41:42    19 -->                                                                         [tcl] set ucliGUI::state
+19:41:42    20 -->                                                                             [tcl] ucliCore::getToolPID
+19:41:42    21 -->                                                                                 [tcl] synopsys::env hasTB
+19:41:42    22 -->                                                                                     [tcl] trigger_hier_stack_context_switch 0
+19:41:42    23 -->                                                                                         [tcl] synUtils::setDVEInitPhase 1
+19:41:42    24 -->                                                                                             [tcl] gui_get_env SIMSETUP::SIMVPD
+19:41:42    25 --> ...  [tcl] synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/HW5/inter.vpd -locking
+19:41:42    26 --> ...      [tcl] synopsys::dump -autoflush on -fid VPD0
+19:41:42    27 --> ...          [tcl] set ::dve_fid VPD0
+19:41:42    28 --> ...              [tcl] synUtils::setDVEInitPhase 0
+19:41:42    29 --> ...                  [tcl] ucliCore::getToolPID
+19:41:42    30 --> ...                      [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpEbHFTe
+19:41:42    31 --> ...                          [tcl] synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.jtbell.19440}
+19:41:42    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jtbell.19440}
+19:41:42    33 --> ...                                  [tcl] dveMisc::vbusExpand hw5prob5
+19:41:43    34 --> ...                                      [tcl] config endofsim noexit
+19:41:43    35 --> ...                                          [tcl] config onfail enable all
+19:41:43    36 --> ...                                              [tcl] config syscaddplainmembers
+19:41:43    37 --> ...                                                  [tcl] config syscaddsourcenames
+19:41:43    38 --> ...                                                      [tcl] config syscaddstructtypes
+19:41:43    39 --> ...                                                          [tcl] synopsys::listing -disable
+19:41:55    40 --> ...                                                              [tcl] synopsys::dump -add {hw5prob5.A hw5prob5.B hw5prob5.first hw5prob5.reset hw5prob5.second } -aggregates  -fid VPD0
+19:41:57    41 --> ...                                                                  [tcl] synopsys::run
+19:41:57    42 --> ...                                                                      [tcl] set ucliGUI::state
+19:41:57    43 --> ...                                                                          [tcl] gui_update_simulator_buttons
+19:41:57    44 --> ...                                                                              [tcl] set ucliGUI::state
+19:41:57    45 --> ...                                                                                  [tcl] set ucliGUI::state
+19:41:57    46 --> ...                                                                                      [tcl] set ucliGUI::state
+19:41:57    47 --> ...                                                                                          [tcl] catch {senv activeDomain} dveMisc::result 
+19:41:57    48 --> ...                                                                                              [tcl] set dveMisc::result
+19:41:57    49 --> ...                                                                                                  [tcl] gui_update_simulator_buttons

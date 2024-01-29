@@ -1,0 +1,26 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "system": [
+        "system",
+        "gdAaG",
+        "module",
+        2
+    ],
+    "chipInterface": [
+        "chipInterface",
+        "Cr8np",
+        "module",
+        4
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        3
+    ]
+}

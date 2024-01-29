@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1699299811.104491406, "rt":0.39, "ut":0.16, "st":0.11}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1699299810.265732003}
+{"VCS_COMP_START_TIME": 1699299810.265732003}
+{"VCS_COMP_END_TIME": 1699299811.593927926}
+{"VCS_USER_OPTIONS": "-q -nc -sverilog -sverilog testfile.sv library.sv lab_4_library.sv hw7prob3test.sv"}

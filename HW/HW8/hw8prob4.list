@@ -1,0 +1,94 @@
+addr data   label     opcode  operands
+---- ----  --------   ------  --------
+0FF0 0009  SIDE       .DW     $9      
+0FF2 0051  SQUARE     .DW     $51     
+1000 30C0             LI      R3      
+1002 0051                     $51     
+1004 3080             LI      R2      
+1006 0000                     $0      
+1008 C310  LOOP       SLLI    R4 R2   
+100A 0001                     $1      
+100C 5113             SLT     R4 R2 R3
+100E 3820             SW      R4 R0   
+1010 2000                     BASE    
+1012 3090             ADDI    R2 R2   
+1014 0001                     $1      
+1016 D800             BRNZ            
+1018 1008                     LOOP    
+101A F800             BRA             
+101C 101E                     ROWSTART
+101E 3140  ROWSTART   LI      R5      
+1020 0FF0                     SIDE    
+1022 F368             SRAI    R5 R5   
+1024 0001                     $0001   
+1026 3180             LI      R6      
+1028 0FF0                     SIDE    
+102A F3B0             SRAI    R6 R6   
+102C 0001                     $0001   
+102E 31B0             ADDI    R6 R6   
+1030 0001                     $0001   
+1032 3080  BEGLOOP    LI      R2      
+1034 0001                     $1      
+1036 31C0             LI      R7      
+1038 0FF0                     SIDE    
+103A C1FE             SLL     R7 R7 R6
+103C 01FD             ADD     R7 R7 R5
+103E C3F8             SLLI    R7 R7   
+1040 0001                     $0001   
+1042 29F8             LW      R7 R7   
+1044 2000                     BASE    
+1046 20E8             MV      R3 R5   
+1048 30D8             ADDI    R3 R3   
+104A 0001                     $0001   
+104C 53D8             SLTI    R7 R3   
+104E 0FF0                     SIDE    
+1050 D800             BRNZ            
+1052 105A                     NEXTVAL1
+1054 31C0             LI      R7      
+1056 0FF0                     SIDE    
+1058 10DF             SUB     R3 R3 R7
+105A 2130  NEXTVAL1   MV      R4 R6   
+105C 3120             ADDI    R4 R4   
+105E 0001                     $0001   
+1060 53E0             SLTI    R7 R4   
+1062 0FF0                     SIDE    
+1064 D800             BRNZ            
+1066 106E                     NEXTVAL2
+1068 31C0             LI      R7      
+106A 0FF0                     SIDE    
+106C 1127             SUB     R4 R4 R7
+106E 31C0  NEXTVAL2   LI      R7      
+1070 0FF0                     SIDE    
+1072 C1FC             SLL     R7 R7 R4
+1074 01FB             ADD     R7 R7 R3
+1076 C3F8             SLLI    R7 R7   
+1078 0001                     $0001   
+107A 31F8             ADDI    R7 R7   
+107C 2000                     BASE    
+107E 29F8             LW      R7 R7   
+1080 2000                     BASE    
+1082 2050             MV      R1 R2   
+1084 C800             BRZ             
+1086 108C                     EXECUTEHERE
+1088 2158             MV      R5 R3   
+108A 21A0             MV      R6 R4   
+108C 31B0  EXECUTEH   ADDI    R6 R6   
+108E 0002                     $2      
+1090 53E0             SLTI    R7 R4   
+1092 0FF0                     SIDE    
+1094 D800             BRNZ            
+1096 109E                     NEXTVAL3
+1098 31C0             LI      R7      
+109A 0FF0                     SIDE    
+109C 1127             SUB     R4 R4 R7
+109E 31C0  NEXTVAL3   LI      R7      
+10A0 0052                     $52     
+10A2 3090             ADDI    R2 R2   
+10A4 0001                     $1      
+10A6 53E0             SLTI    R7 R4   
+10A8 0FF0                     SIDE    
+10AA 9800             BRN             
+10AC 10B2                     DONE    
+10AE F800             BRA             
+10B0 1032                     BEGLOOP 
+10B2 FE00  DONE       STOP            

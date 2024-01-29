@@ -1,0 +1,51 @@
+21:37:34    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe simv -q -nc -pid 5787 -toolin /tmp/vcs_20230912013728_5786_jtbell..stdin -toolout /tmp/vcs_20230912013728_5786_jtbell..stdout  
+21:37:34    17 -->                                                                 [tcl] set ucliGUI::state
+21:37:34    18 -->                                                                     [tcl] gui_update_simulator_buttons
+21:37:36    19 -->                                                                         [tcl] set ucliGUI::state
+21:37:36    20 -->                                                                             [tcl] ucliCore::getToolPID
+21:37:36    21 -->                                                                                 [tcl] synopsys::env hasTB
+21:37:36    22 -->                                                                                     [tcl] trigger_hier_stack_context_switch 0
+21:37:36    23 -->                                                                                         [tcl] synUtils::setDVEInitPhase 1
+21:37:36    24 -->                                                                                             [tcl] gui_get_env SIMSETUP::SIMVPD
+21:37:36    25 --> ...  [tcl] synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/inter.vpd -locking
+21:37:36    26 --> ...      [tcl] synopsys::dump -autoflush on -fid VPD0
+21:37:36    27 --> ...          [tcl] set ::dve_fid VPD0
+21:37:36    28 --> ...              [tcl] synUtils::setDVEInitPhase 0
+21:37:36    29 --> ...                  [tcl] ucliCore::getToolPID
+21:37:36    30 --> ...                      [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp4LAxyR
+21:37:36    31 --> ...                          [tcl] synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.jtbell.5787}
+21:37:36    32 --> ...                              [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jtbell.5787}
+21:37:37    33 --> ...                                  [tcl] dveMisc::vbusExpand system
+21:37:37    34 --> ...                                      [tcl] config endofsim noexit
+21:37:37    35 --> ...                                          [tcl] config onfail enable all
+21:37:37    36 --> ...                                              [tcl] config syscaddplainmembers
+21:37:37    37 --> ...                                                  [tcl] config syscaddsourcenames
+21:37:37    38 --> ...                                                      [tcl] config syscaddstructtypes
+21:37:37    39 --> ...                                                          [tcl] synopsys::listing -disable
+21:37:43    40 --> ...                                                              [tcl] dveMisc::vbusExpand system.ap
+21:37:49    41 --> ...                                                                  [tcl] tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/dve/schematic.tcl
+21:37:49    42 --> ...                                                                      [tcl] tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/schematic/base.tcl
+21:37:49    43 --> ...                                                                          [tcl] tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/schematic/enable.tcl
+21:37:49    44 --> ...                                                                              [tcl] tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/schematic/netlist.tcl
+21:37:49    45 --> ...                                                                                  [tcl] tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/schematic/method.tcl
+21:37:49    46 --> ...                                                                                      [tcl] tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/strokes/stroke_defaults.tcl
+21:37:49    47 --> ...                                                                                          [tcl] tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/dialogs/ObjectListInfo.tcl
+21:37:49    48 --> ...                                                                                              [tcl] tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/schematic/DialogPathSchematicFanInOut.tcl
+21:37:49    49 --> ...                                                                                                  [tcl] tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/dve/driversloads.tcl
+21:39:30    50 --> ...  [tcl] synopsys::dump -add {system.ap} -scope "." -depth 1 -fid VPD0
+21:39:34    51 --> ...      [tcl] ucliGUI::getSignalValues -scope system.ap -radix {binary } -list {a }
+21:39:35    52 --> ...          [tcl] ucliGUI::getSignalValues -scope system.ap -radix {binary } -list {b }
+21:39:36    53 --> ...              [tcl] ucliGUI::getSignalValues -scope system.ap -radix {binary } -list {c }
+21:39:38    54 --> ...                  [tcl] ucliGUI::getSignalValues -scope system.ap -radix {binary } -list {g }
+21:39:39    55 --> ...                      [tcl] ucliGUI::getSignalValues -scope system.ap -radix {binary } -list {h }
+21:40:09    56 --> ...                          [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+21:40:09    57 --> ...                              [tcl] synopsys::finish
+21:40:09    58 --> ...                                  [tcl] set ucliGUI::state
+21:40:09    59 --> ...                                      [tcl] gui_update_simulator_buttons
+21:40:09    60 --> ...                                          [tcl] set ucliGUI::state
+21:40:09    61 --> ...                                              [tcl] catch {senv activeDomain} dveMisc::result 
+21:40:09    62 --> ...                                                  [tcl] set dveMisc::result
+21:40:09    63 --> ...                                                      [tcl] gui_update_simulator_buttons
+21:40:09    64 --> ...                                                          [tcl] catch {senv activeDomain} dveMisc::result 
+21:40:09    65 --> ...                                                              [tcl] set dveMisc::result
+21:40:10    66 --> ...                                                                  [tcl] ucli_exit

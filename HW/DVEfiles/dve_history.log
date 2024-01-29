@@ -1,0 +1,86 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Layout -key child_console_size_x -value 1273
+gui_set_state_value -category Layout -key child_console_size_y -value 173
+gui_set_state_value -category Layout -key child_data_size_x -value 168
+gui_set_state_value -category Layout -key child_data_size_y -value 452
+gui_set_state_value -category Layout -key child_driver_size_x -value 1001
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 168
+gui_set_state_value -category Layout -key child_hier_size_y -value 452
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 938
+gui_set_state_value -category Layout -key child_schematic_size_y -value 453
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 940
+gui_set_state_value -category Layout -key child_source_size_y -value 447
+gui_set_state_value -category Layout -key child_wave_colname -value 121
+gui_set_state_value -category Layout -key child_wave_colvalue -value 120
+gui_set_state_value -category Layout -key child_wave_left -value 245
+gui_set_state_value -category Layout -key child_wave_right -value 599
+gui_set_state_value -category Layout -key main_pos_x -value 8
+gui_set_state_value -category Layout -key main_pos_y -value 57
+gui_set_state_value -category Layout -key main_size_x -value 1281
+gui_set_state_value -category Layout -key main_size_y -value 787
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 854
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 348
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 949
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 699
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe simv -args {-ucligui  -q -nc} -dir .
+gui_list_expand -id  Hier.1   system
+gui_list_select -id Hier.1 -current_item_name system.ap -current_item_type Scope  -selected  { system.ap   }
+gui_list_action -id  Hier.1 system.ap
+gui_list_select -id Data.1 -selected  { system.ap.a   }
+gui_use_schematics 
+gui_path_show -objects system.ap.a
+gui_zoom -window Schematic.1 -rect { {-15507 -4134} {25551 14178} }
+gui_zoom -window Schematic.1 -rect { {-4566 -8186} {23021 4118} }
+gui_zoom -window Schematic.1 -rect { {-4566 -8186} {23021 4118} }
+gui_list_action -id  Data.1 system.ap.a
+gui_use_schematics 
+gui_sch_show -name system.ap
+gui_zoom -window Schematic.2 -rect { {-15507 -4134} {25551 14178} }
+gui_zoom -window Schematic.2 -rect { {-15507 -4134} {25551 14178} }
+gui_zoom -window Schematic.2 -rect { {-804 -12420} {39761 5673} }
+gui_zoom -window Schematic.2 -rect { {-804 -12420} {39761 5673} }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Schematic.2 system.ap -insertionbar
+gui_list_select -id Wave.1 -selected  { system.ap.a   }
+gui_list_action -id  Wave.1 system.ap.a
+gui_get_drivers -id Wave.1 -signal system.ap.a
+gui_list_select -id Wave.1 -selected  { system.ap.b   }
+gui_list_action -id  Wave.1 system.ap.b
+gui_get_drivers -id Wave.1 -signal system.ap.b
+gui_list_select -id Wave.1 -selected  { system.ap.c   }
+gui_list_action -id  Wave.1 system.ap.c
+gui_get_drivers -id Wave.1 -signal system.ap.c
+gui_list_select -id Wave.1 -selected  { system.ap.g   }
+gui_list_action -id  Wave.1 system.ap.g
+gui_get_drivers -id Wave.1 -signal system.ap.g
+gui_list_select -id Wave.1 -selected  { system.ap.h   }
+gui_list_action -id  Wave.1 system.ap.h
+gui_get_drivers -id Wave.1 -signal system.ap.h
+gui_list_select -id Wave.1 -selected  { system.ap.i   }
+gui_close_window -window TopLevel.2

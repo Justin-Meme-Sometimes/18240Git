@@ -1,0 +1,40 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240Git/HW/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp4LAxyR
+synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.jtbell.5787}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jtbell.5787}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/dve/schematic.tcl
+tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/schematic/base.tcl
+tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/schematic/enable.tcl
+tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/schematic/netlist.tcl
+tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/schematic/method.tcl
+tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/strokes/stroke_defaults.tcl
+tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/dialogs/ObjectListInfo.tcl
+tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/common/schematic/DialogPathSchematicFanInOut.tcl
+tcl_source /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/auxx/gui/dve/driversloads.tcl
+synopsys::dump -add {system.ap} -scope "." -depth 1 -fid VPD0
+ucliGUI::getSignalValues -scope system.ap -radix {binary } -list {a }
+ucliGUI::getSignalValues -scope system.ap -radix {binary } -list {b }
+ucliGUI::getSignalValues -scope system.ap -radix {binary } -list {c }
+ucliGUI::getSignalValues -scope system.ap -radix {binary } -list {g }
+ucliGUI::getSignalValues -scope system.ap -radix {binary } -list {h }
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

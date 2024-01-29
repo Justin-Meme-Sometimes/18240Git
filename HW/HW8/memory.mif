@@ -1,0 +1,24 @@
+DEPTH = 65536;         % Memory depth and width are required   %
+                                       % DEPTH is the number of addresses      %
+                WIDTH = 16;            % WIDTH is the number of bits of data per word %
+                %  DEPTH and WIDTH should be entered as decimal numbers        %
+
+                ADDRESS_RADIX = HEX;   % Address and value radixes are required  %
+                DATA_RADIX = HEX;      % Enter BIN, DEC, HEX, OCT, or UNS; unless  %
+                                       % otherwise specified, radixes = HEX    %
+
+                CONTENT
+                BEGIN
+             
+0100 : 3040;
+0102 : 0001;
+0104 : 3080;
+0106 : 0002;
+0108 : 30C0;
+010A : 0003;
+010C : 30C0;
+010E : 0004;
+0110 : 30C0;
+0112 : 0005;
+0114 : FE00;
+END;

@@ -1,0 +1,62 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "Multiplexer": [
+        "Multiplexer",
+        "UxyT3",
+        "module",
+        3
+    ],
+    "Decoder": [
+        "Decoder",
+        "t8TcA",
+        "module",
+        4
+    ],
+    "Counter": [
+        "Counter",
+        "Nsh6f",
+        "module",
+        5
+    ],
+    "Synchronizer": [
+        "Synchronizer",
+        "mLbx7",
+        "module",
+        6
+    ],
+    "ShiftRegister_PIPO": [
+        "ShiftRegister_PIPO",
+        "yK5FF",
+        "module",
+        7
+    ],
+    "ShiftRegister_SIPO": [
+        "ShiftRegister_SIPO",
+        "ckLmD",
+        "module",
+        8
+    ],
+    "BarrelShiftRegister": [
+        "BarrelShiftRegister",
+        "ts568",
+        "module",
+        9
+    ],
+    "hw7prob3_test": [
+        "hw7prob3_test",
+        "viFBu",
+        "module",
+        11
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        10
+    ]
+}

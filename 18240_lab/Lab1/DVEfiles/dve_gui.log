@@ -1,0 +1,60 @@
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr3/jtbell/private/18240/18240_lab/Lab1/inter.vpd' was opened successfully.
+                   0 f = 0, e = 0, d = 0, c = 0, b = 0, a = 0, win = 0,err = 0
+                  10 f = 0, e = 0, d = 0, c = 0, b = 0, a = 1, win = 0,err = 0
+                  20 f = 0, e = 0, d = 0, c = 0, b = 1, a = 0, win = 0,err = 0
+                  30 f = 0, e = 0, d = 0, c = 0, b = 1, a = 1, win = 0,err = 0
+                  40 f = 0, e = 0, d = 0, c = 1, b = 0, a = 0, win = 0,err = 0
+                  50 f = 0, e = 0, d = 0, c = 1, b = 0, a = 1, win = 0,err = 0
+                  60 f = 0, e = 0, d = 0, c = 1, b = 1, a = 0, win = 0,err = 0
+                  70 f = 0, e = 0, d = 0, c = 1, b = 1, a = 1, win = 1,err = 0
+                  80 f = 0, e = 0, d = 1, c = 0, b = 0, a = 0, win = 0,err = 0
+                  90 f = 0, e = 0, d = 1, c = 0, b = 0, a = 1, win = 0,err = 0
+                 100 f = 0, e = 0, d = 1, c = 0, b = 1, a = 0, win = 0,err = 1
+                 110 f = 0, e = 0, d = 1, c = 0, b = 1, a = 1, win = 0,err = 0
+                 120 f = 0, e = 0, d = 1, c = 1, b = 0, a = 0, win = 0,err = 0
+                 130 f = 0, e = 0, d = 1, c = 1, b = 0, a = 1, win = 0,err = 0
+                 140 f = 0, e = 0, d = 1, c = 1, b = 1, a = 0, win = 0,err = 1
+                 150 f = 0, e = 0, d = 1, c = 1, b = 1, a = 1, win = 0,err = 0
+                 160 f = 0, e = 1, d = 0, c = 0, b = 0, a = 0, win = 0,err = 0
+                 170 f = 0, e = 1, d = 0, c = 0, b = 0, a = 1, win = 0,err = 0
+                 180 f = 0, e = 1, d = 0, c = 0, b = 1, a = 0, win = 0,err = 0
+                 190 f = 0, e = 1, d = 0, c = 0, b = 1, a = 1, win = 0,err = 0
+                 200 f = 0, e = 1, d = 0, c = 1, b = 0, a = 0, win = 0,err = 0
+                 210 f = 0, e = 1, d = 0, c = 1, b = 0, a = 1, win = 0,err = 0
+                 220 f = 0, e = 1, d = 0, c = 1, b = 1, a = 0, win = 0,err = 0
+                 230 f = 0, e = 1, d = 0, c = 1, b = 1, a = 1, win = 0,err = 0
+                 240 f = 0, e = 1, d = 1, c = 0, b = 0, a = 0, win = 1,err = 0
+                 250 f = 0, e = 1, d = 1, c = 0, b = 0, a = 1, win = 0,err = 0
+                 260 f = 0, e = 1, d = 1, c = 0, b = 1, a = 0, win = 1,err = 0
+                 270 f = 0, e = 1, d = 1, c = 0, b = 1, a = 1, win = 0,err = 0
+                 280 f = 0, e = 1, d = 1, c = 1, b = 0, a = 0, win = 0,err = 0
+                 290 f = 0, e = 1, d = 1, c = 1, b = 0, a = 1, win = 0,err = 0
+                 300 f = 0, e = 1, d = 1, c = 1, b = 1, a = 0, win = 1,err = 0
+                 310 f = 0, e = 1, d = 1, c = 1, b = 1, a = 1, win = 0,err = 0
+                 320 f = 1, e = 0, d = 0, c = 0, b = 0, a = 0, win = 0,err = 0
+                 330 f = 1, e = 0, d = 0, c = 0, b = 0, a = 1, win = 0,err = 0
+                 340 f = 1, e = 0, d = 0, c = 0, b = 1, a = 0, win = 0,err = 0
+                 350 f = 1, e = 0, d = 0, c = 0, b = 1, a = 1, win = 0,err = 0
+                 360 f = 1, e = 0, d = 0, c = 1, b = 0, a = 0, win = 0,err = 0
+                 370 f = 1, e = 0, d = 0, c = 1, b = 0, a = 1, win = 1,err = 0
+                 380 f = 1, e = 0, d = 0, c = 1, b = 1, a = 0, win = 0,err = 1
+                 390 f = 1, e = 0, d = 0, c = 1, b = 1, a = 1, win = 1,err = 1
+                 400 f = 1, e = 0, d = 1, c = 0, b = 0, a = 0, win = 0,err = 0
+                 410 f = 1, e = 0, d = 1, c = 0, b = 0, a = 1, win = 0,err = 0
+                 420 f = 1, e = 0, d = 1, c = 0, b = 1, a = 0, win = 0,err = 1
+                 430 f = 1, e = 0, d = 1, c = 0, b = 1, a = 1, win = 0,err = 0
+                 440 f = 1, e = 0, d = 1, c = 1, b = 0, a = 0, win = 0,err = 0
+                 450 f = 1, e = 0, d = 1, c = 1, b = 0, a = 1, win = 0,err = 0
+                 460 f = 1, e = 0, d = 1, c = 1, b = 1, a = 0, win = 0,err = 1
+                 470 f = 1, e = 0, d = 1, c = 1, b = 1, a = 1, win = 0,err = 0
+                 480 f = 1, e = 1, d = 0, c = 0, b = 0, a = 0, win = 0,err = 0
+                 490 f = 1, e = 1, d = 0, c = 0, b = 0, a = 1, win = 0,err = 0
+                 500 f = 1, e = 1, d = 0, c = 0, b = 1, a = 0, win = 0,err = 1
+                 510 f = 1, e = 1, d = 0, c = 0, b = 1, a = 1, win = 0,err = 1
+                 520 f = 1, e = 1, d = 0, c = 1, b = 0, a = 0, win = 0,err = 0
+                 530 f = 1, e = 1, d = 0, c = 1, b = 0, a = 1, win = 0,err = 0
+                 540 f = 1, e = 1, d = 0, c = 1, b = 1, a = 0, win = 0,err = 1
+$finish called from file "Loteria.sv", line 64.
+$finish at simulation time                  550
+Simulation complete, time is 550.
